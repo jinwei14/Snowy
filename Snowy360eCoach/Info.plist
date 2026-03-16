@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>zh-Hans</string>
+    <key>CFBundleDisplayName</key>
+    <string>Snowy eCoach</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    <key>CFBundlePackageType</key>
+    <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen</string>
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>armv7</string>
+        <string>wifi</string>
+        <string>accelerometer</string>
+        <string>gyroscope</string>
+        <string>microphone</string>
+    </array>
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+    </array>
+
+    <!-- Privacy permissions required -->
+    <key>NSCameraUsageDescription</key>
+    <string>Snowy eCoach 需要相机权限用于连接 Insta360 X5 摄像头，提供实时 AI 滑雪教练功能。</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Snowy eCoach 需要麦克风权限用于语音对话功能，你可以通过语音向 AI 教练提问。</string>
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>Snowy eCoach 需要语音识别权限将你的语音转换为文字，以便 AI 教练理解你的问题。</string>
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>Snowy eCoach 需要本地网络权限通过 WiFi Direct 连接 Insta360 X5 摄像头。</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Snowy eCoach 需要相册权限用于导入参考视频和保存训练录像。</string>
+    <key>NSMotionUsageDescription</key>
+    <string>Snowy eCoach 使用运动传感器检测你的滑行状态（转弯、停止等），实现智能采样，只在关键时刻分析你的动作。</string>
+
+    <!-- WiFi Direct / Insta360 connection -->
+    <key>NSBonjourServices</key>
+    <array>
+        <string>_http._tcp</string>
+    </array>
+</dict>
+</plist>
